@@ -1,6 +1,9 @@
 body {
     font-family: 'Lexend Deca', sans-serif;
     background-color: rgb(244, 244, 244);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    url(../image/bg.jpg);
+    background-size: cover;
 }
 
 .btn{
@@ -55,9 +58,6 @@ span.inputColor {
     margin: 50px 20px 20px 20px;
     padding-top: 15px;
     padding-bottom: 15px;
-    -webkit-box-shadow: -1px 6px 11px 0px rgba(230, 230, 230, 1);
-    -moz-box-shadow: -1px 6px 11px 0px rgba(230, 230, 230, 1);
-    box-shadow: -1px 6px 11px 0px rgba(230, 230, 230, 1);
     border-radius: 50px;
 }
 
