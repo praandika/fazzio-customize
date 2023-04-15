@@ -97,9 +97,10 @@ body {
 }
 
 .success-outline:hover{
-    background-color: #149a21;
-    color: #ffffff;
+    background-color: transparent;
+    color: #149a21;
     border-color: #149a21;
+    padding: 10px 40px;
 }
 
 .success-borderless{
