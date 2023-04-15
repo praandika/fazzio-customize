@@ -1,9 +1,56 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Lexend Deca', sans-serif;
     background-color: rgb(244, 244, 244);
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
     url(../image/bg.jpg);
     background-size: cover;
+}
+
+.title .tagline{
+    background: linear-gradient(to right, #ffba18 0%, #a600ff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.custom-box{
+    position: relative;
+}
+
+.ornament1{
+    width: 100px;
+    height: 100px;
+    background-color: #FFB200;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 0;
+    right: -20px;
+}
+
+.ornament2{
+    width: 150px;
+    height: 150px;
+    background-color: #277BC0;
+    border-radius: 50%;
+
+    position: absolute;
+    bottom: -50px;
+    left: 50px;
+}
+
+.ornament3{
+    width: 80px;
+    height: 80px;
+    background-color: #FFCB42;
+    border-radius: 20%;
+
+    position: absolute;
+    top: -30px;
+    left: -25px;
 }
 
 .btn{
@@ -13,6 +60,7 @@ body {
     border-style: solid;
     border-radius: 50px;
     cursor: pointer;
+    transition: ease 0.2s;
 }
 
 .success{
@@ -25,6 +73,63 @@ body {
     background-color: transparent;
     border-color: #149a21;
     color: #149a21;
+}
+
+.primary-outline{
+    border-width: 3px !important;
+    background-color: transparent;
+    color: #3598db;
+    border-color: #3598db;
+}
+
+.primary-outline:hover{
+    background-color: transparent;
+    color: #3598db;
+    border-color: #3598db;
+    padding: 10px 40px;
+}
+
+.success-outline{
+    border-width: 3px !important;
+    background-color: transparent;
+    color: #149a21;
+    border-color: #149a21;
+}
+
+.success-outline:hover{
+    background-color: #149a21;
+    color: #ffffff;
+    border-color: #149a21;
+}
+
+.success-borderless{
+    color: #149a21;
+}
+
+.success-borderless:hover{
+    color: #149a21;
+    background-color: transparent;
+    color: #149a21;
+    border-color: #149a21;
+}
+
+.btn-small{
+    border-width: 1px !important;
+    padding: 5px 15px;
+    font-size: 12px;
+}
+
+.pulse{
+    animation: pulse-animation 0.5s infinite;
+}
+
+@keyframes pulse-animation {
+    0% {
+        box-shadow: 0 0 0 0px rgba(53,152,219, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 0 15px rgba(53,152,219, 0);
+    }
 }
 
 label{
@@ -48,9 +153,23 @@ span.inputColor {
 }
 
 .input-group-text.inputColor {
-    background-color: #14539a;
-    color: #ffffff;
     font-weight: 500;
+    background-color: #ffffff;
+}
+
+.glass-box {
+    position: absolute;
+    top: 30px;
+    width: 300px;
+    height: 500px;
+    border-radius: 50px;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .content-box {
@@ -59,6 +178,8 @@ span.inputColor {
     padding-top: 15px;
     padding-bottom: 15px;
     border-radius: 50px;
+
+    position: relative;
 }
 
 .logo {
