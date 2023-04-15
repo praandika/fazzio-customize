@@ -1,34 +1,39 @@
 <div class="container text-center">
+    <div class="glass-box"></div>
     <div class="row align-items-center content-box">
-
-        <div class="col-12" style="margin-bottom: 20px;">
+        <div class="ornament3"></div>
+        <div class="col-12 title" style="margin-bottom: 20px;">
             <img src="image/Logo Bisma-5.png" class="logo">
-            <h5 style="font-family: 'Croissant One', cursive; font-weight: bold;">Create Your Own Style!</h5>
+            <h5 class="tagline" style="font-family: 'Croissant One', cursive; font-weight: bold;">It’s The Best Thing Since Sliced Bread!</h5>
         </div>
 
         <div class="col-sm-12 col-md-6" style="padding: 0; position: relative;">
             <div class="body" id="contentBody"></div>
             <div class="velg velg-rear contentVelg"></div>
             <div class="velg velg-front contentVelg"></div>
-            <img src="image/model.png" class="img-fluid img" style="position: relative;" oncontextmenu="return false;">
+            <img src="image/model2.png" class="img-fluid img" id="image" style="position: relative;" oncontextmenu="return false;">
         </div>
 
-        <div class="col-sm-12 col-md-6" style="padding: 10px;">
+        <div class="col-sm-12 col-md-6 custom-box" style="padding: 10px;">
+            <div class="ornament1"></div>
+            <div class="ornament2"></div>
+            
+            <label>Here is Your Color</label>
             <div class="input-group">
                 <span class="input-group-text inputColor" id="textLabel">Body Color</span>
-                <input type="color" id="colorInput" aria-label="Color" class="form-control inputColor"
-                    style="height: 50px;">
                 <input type="text" id="colorCode" aria-label="Color Code" class="form-control inputColor"
-                    style="text-align: center;">
+                    style="text-align: center; padding: 10px;" readonly>
             </div>
 
             <div class="input-group">
                 <span class="input-group-text inputColor" id="textLabelVelg">Velg Color</span>
-                <input type="color" id="colorInputVelg" aria-label="Color" class="form-control inputColor"
-                    style="height: 50px;">
                 <input type="text" id="colorCodeVelg" aria-label="Color Code" class="form-control inputColor"
-                    style="text-align: center;">
+                    style="text-align: center; padding: 10px;" readonly>
             </div>
+        </div>
+
+        <div class="col-12" style="padding: 10px; margin-top: 50px; z-index: 99;">
+            <button class="btn primary-outline pulse" id="save" onclick="save()"><img src="../image/icons8-save.gif" width="30px"> &nbsp;Save</button>
         </div>
     </div>
 </div>

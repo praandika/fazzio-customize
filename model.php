@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
    <head>
-      <?php include "head.html" ?>
+      <?php include "components/head.html" ?>
    </head>
 
    <body>
-      <?php include "pickcolor.html" ?>
-      <?php include "script.html" ?>
+      <?php include "components/result.html" ?>
+      <?php include "components/script.html" ?>
    </body>
+
+   <script src="assets/result.js"></script>
 </html>

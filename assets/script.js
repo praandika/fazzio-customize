@@ -23,3 +23,41 @@ colorInputVelg.addEventListener('input', () => {
     textLabelVelg.style.backgroundColor = colorInputVelg.value;
     console.log(colorInputVelg.value);
 });
+
+function addSticker(){
+    let image = document.getElementById("image");
+    let sticker = document.getElementById("sticker");
+    let button = document.getElementById("button");
+    image.removeAttribute("src");
+    image.setAttribute("src", "image/model.png");
+    sticker.innerHTML = "- Remove";
+    button.removeAttribute("class");
+    button.setAttribute("class", "btn btn-small danger-borderless");
+    button.removeAttribute("onclick");
+    button.setAttribute("onclick", "removeSticker()");
+}
+
+function removeSticker(){
+    let image = document.getElementById("image");
+    let sticker = document.getElementById("sticker");
+    let button = document.getElementById("button");
+    image.removeAttribute("src");
+    image.setAttribute("src", "image/model2.png");
+    sticker.innerHTML = "+Add";
+    button.removeAttribute("class");
+    button.setAttribute("class", "btn btn-small success-borderless");
+    button.removeAttribute("onclick");
+    button.setAttribute("onclick", "addSticker()");
+}
+
+function save(){
+    let image = document.getElementById("image").src;
+    let body = document.getElementById("colorCode").value;
+    let velg = document.getElementById("colorCodeVelg").value;
+
+    localStorage.setItem("image", image);
+    localStorage.setItem("body", body);
+    localStorage.setItem("velg", velg);
+
+    location.href = "http://localhost:3000/model.php";
+}

@@ -113,6 +113,17 @@ body {
     border-color: #149a21;
 }
 
+.danger-borderless{
+    color: #9a1414;
+}
+
+.danger-borderless:hover{
+    color: #9a1414;
+    background-color: transparent;
+    color: #9a1414;
+    border-color: #9a1414;
+}
+
 .btn-small{
     border-width: 1px !important;
     padding: 5px 15px;
