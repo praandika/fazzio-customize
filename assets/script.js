@@ -61,5 +61,5 @@ function save(){
     localStorage.setItem("body", body);
     localStorage.setItem("velg", velg);
 
-    location.href = "http://localhost:3000/model.php";
+    location.href = "https://fazzio.yamahabismagroup/model.php";
 }
