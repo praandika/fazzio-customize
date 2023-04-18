@@ -9,5 +9,5 @@
       <?php include "components/script.html" ?>
    </body>
 
-   <script src="assets/result1.js"></script>
+   <script src="assets/result2.js"></script>
 </html>
