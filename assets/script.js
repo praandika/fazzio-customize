@@ -52,10 +52,12 @@ function removeSticker(){
 
 function save(){
     let image = document.getElementById("image").src;
+    let imageName = /[^/]*$/.exec(image)[0];
     let body = document.getElementById("colorCode").value;
     let velg = document.getElementById("colorCodeVelg").value;
 
     localStorage.setItem("image", image);
+    localStorage.setItem("imageName", imageName);
     localStorage.setItem("body", body);
     localStorage.setItem("velg", velg);
 
