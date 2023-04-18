@@ -19,4 +19,4 @@ colorCodeVelg.style.color = localStorage.getItem("velg");
 
 img.setAttribute("src", localStorage.getItem("image"));
 
-order.setAttribute("href", `https://wa.me/6281246571421?text=Halo%20saya%20ingin%20order%20Fazzio%20custom%20dengan%20rincian%20berikut%3A%0A%0AWarna%20Body%3A%20%23${bodyCode}%0AWarna%20Velg:%20%23${velgCode}%0A%0APreview%3A%20https://fazzio.yamahabismagroup/preview.php?image=${localStorage.getItem("imageName")}%26body=${bodyCode}%26velg=${velgCode}`);
+order.setAttribute("href", `https://wa.me/6281246571421?text=Halo%20saya%20ingin%20order%20Fazzio%20custom%20dengan%20rincian%20berikut%3A%0A%0AWarna%20Body%3A%20%23${bodyCode}%0AWarna%20Velg:%20%23${velgCode}%0A%0APreview%3A%20https://fazzio.yamahabismagroup.com/preview.php?image=${localStorage.getItem("imageName")}%26body=${bodyCode}%26velg=${velgCode}`);
